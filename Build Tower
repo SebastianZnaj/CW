@@ -1,0 +1,16 @@
+n_floors = 6
+
+def tower_builder(n_floors):
+    step1 = []
+    step2 = []
+    for i in range(1,(n_floors)*2, 2):
+        step1.append(i)
+    for j in step1:
+        g = j * "*"
+        h = int((step1[-1] - j)/2)
+        k = h * " " + g + h * " "
+        step2.append(k)
+    return step2
+
+
+print(tower_builder(n_floors))
