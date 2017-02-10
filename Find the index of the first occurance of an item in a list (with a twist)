@@ -1,0 +1,11 @@
+def index_finder(l,x):
+    index = l.index(x)
+    count = 0
+    pos = -1
+    for i in l:
+        pos += 1
+        if i == x:
+            count += 1
+            if count == 2:
+              return pos
+    return index
