@@ -12,5 +12,6 @@ def tower_builder(n_floors):
         step2.append(k)
     return step2
 
-
-print(tower_builder(n_floors))
+for i in tower_builder(n_floors):
+    print(i)
+#print(tower_builder(n_floors))
